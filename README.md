@@ -1,1 +1,4 @@
-Tugas JS Dasar - ARKATAMA
+#Tugas JS - ARKATAMA
+
+1. JS Dasar
+2. JS DOM
