@@ -302,9 +302,85 @@ img {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+  margin-top: 0;
 }
 
 .heading {
   padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+      margin: 10px 0;
+  }
+}
+
+/* LOGIN */
+.container-login {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4087d8;
+}
+
+.container-login h4 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+}
+
+form {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #0063d5;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #4087d8;
 }

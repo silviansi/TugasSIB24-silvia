@@ -1,11 +1,7 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+function toggleNav() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
 
 let slideIndex = 0;
 showSlides();
@@ -26,5 +22,3 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000);
 }
-
-document.getElementById("year").innerHTML = new Date().getFullYear();
