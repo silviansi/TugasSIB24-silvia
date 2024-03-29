@@ -1,0 +1,39 @@
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: scroll;
+    padding-right: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-image {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    margin-top: 0;
+    padding: 10px 0;
+}
+
+.card-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
